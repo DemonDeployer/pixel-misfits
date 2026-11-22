@@ -1,0 +1,29 @@
+name: Unzip deploy package
+
+on:
+  push:
+    paths:
+      - deploy.zip
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract deploy.zip
+        run: |
+          unzip -o deploy.zip
+          mv deploy/images deploy/metadata deploy/vercel.json ./
+          rmdir deploy
+          rm -f deploy.zip
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Extract deploy.zip into images, metadata and vercel.json" || echo "nothing to commit"
+          git push
