@@ -1,1 +1,7 @@
-{"name":"pixel-misfits","version":2}
+{
+  "name": "pixel-misfits",
+  "version": 2,
+  "rewrites": [
+    { "source": "/metadata/:id(\\d+)", "destination": "/metadata/:id.json" }
+  ]
+}
