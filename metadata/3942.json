@@ -1,0 +1,67 @@
+{
+  "name": "Pixel Misfits #3942",
+  "description": "Pixel Misfits is a collection of 5,555 unique pixel-art characters: heroes, villains, zombies, ninjas, angels and demons, all built from hand-made traits.",
+  "image": "ipfs://QmZpqNeSnPQKaW3PeWSFCYeNJ83w49jNCwa2QbJtN5NzzQ/3942.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Pink"
+    },
+    {
+      "trait_type": "Back",
+      "value": "None"
+    },
+    {
+      "trait_type": "Skin",
+      "value": "Zombie Green"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Skull Demon"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Startled"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    },
+    {
+      "trait_type": "Eyewear",
+      "value": "Green Round Glasses"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Toxic Antlers"
+    },
+    {
+      "trait_type": "Head Accessory",
+      "value": "Green Headphones"
+    },
+    {
+      "trait_type": "Mouth Item",
+      "value": "None"
+    },
+    {
+      "trait_type": "Right Hand",
+      "value": "None"
+    },
+    {
+      "trait_type": "Left Hand",
+      "value": "None"
+    },
+    {
+      "trait_type": "Body Item",
+      "value": "Gold Chain"
+    },
+    {
+      "trait_type": "Hand Style",
+      "value": "None"
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Rare"
+    }
+  ]
+}
