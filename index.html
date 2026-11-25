@@ -7,7 +7,7 @@
 <meta name="description" content="Pixel Misfits is a collection of 5,555 unique pixel-art characters: heroes, villains, zombies, ninjas, angels and demons, all built from hand-made traits. Minting now on OpenSea.">
 <meta property="og:title" content="Pixel Misfits">
 <meta property="og:description" content="5,555 unique pixel-art characters: heroes, villains, zombies, ninjas, angels and demons, all built from hand-made traits. Minting now on OpenSea.">
-<meta property="og:image" content="https://pixel-misfits.vercel.app/images/1.png">
+<meta property="og:image" content="https://pixel-misfits.vercel.app/images/hero.png">
 <meta property="og:url" content="https://pixel-misfits.vercel.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,6 +92,10 @@
   .copy { background:var(--lime); color:#0B0B0B; border:none; font-family:"Press Start 2P", monospace; font-size:10px; padding:10px 14px; cursor:pointer; }
   .links { display:flex; gap:14px; flex-wrap:wrap; }
   .links a { font-size:13px; }
+  .mini-logo { width:18px; height:18px; border-radius:50%; vertical-align:-4px; margin-right:6px; }
+  .socials { display:flex; gap:12px; align-items:center; }
+  .socials a img { width:38px; height:38px; border-radius:50%; border:1px solid var(--line); display:block; }
+  .socials a:hover img { border-color:var(--lime); }
 
   /* final cta */
   .final { text-align:center; border:1px solid var(--lime); padding:48px 20px; margin-bottom:56px; }
@@ -123,7 +127,7 @@
 <main class="wrap">
 
   <div class="hero">
-    <img class="hero-king" src="images/1.png" alt="Pixel Misfit #1 — crown king">
+    <img class="hero-king" src="images/hero.png" alt="Pixel Misfit — crown and green glasses">
     <h1>PIXEL<br><span>MISFITS</span></h1>
     <p class="lede">A collection of 5,555 unique pixel-art characters: heroes, villains, zombies, ninjas, angels and demons, all built from hand-made traits.</p>
     <div class="hero-cta">
@@ -179,8 +183,8 @@
     <div class="contract-box">
       <div class="addr"><code id="contractAddr">0x5ed0c4077a6a00c07d4e6bd0681deca59d0e68f7</code><button class="copy" id="copyBtn" type="button">COPY</button></div>
       <div class="links">
-        <a href="https://robinhoodchain.blockscout.com/address/0x5ed0c4077a6a00c07d4e6bd0681deca59d0e68f7" target="_blank" rel="noopener">View on Blockscout &nearr;</a>
-        <a href="https://opensea.io/collection/pixel-misfits" target="_blank" rel="noopener">View on OpenSea &nearr;</a>
+        <a href="https://robinhoodchain.blockscout.com/address/0x5ed0c4077a6a00c07d4e6bd0681deca59d0e68f7" target="_blank" rel="noopener"><img class="mini-logo" src="images/logo-explorer.png" alt="">View on Blockscout &nearr;</a>
+        <a href="https://opensea.io/collection/pixel-misfits" target="_blank" rel="noopener"><img class="mini-logo" src="images/logo-opensea.png" alt="">View on OpenSea &nearr;</a>
       </div>
     </div>
   </section>
@@ -196,7 +200,11 @@
 <footer>
   <div class="wrap foot">
     <span>PIXEL MISFITS &middot; 5,555 EDITIONS &middot; ROBINHOOD CHAIN</span>
-    <span><a href="https://opensea.io/collection/pixel-misfits" target="_blank" rel="noopener">OpenSea</a><a href="https://robinhoodchain.blockscout.com/address/0x5ed0c4077a6a00c07d4e6bd0681deca59d0e68f7" target="_blank" rel="noopener">Blockscout</a></span>
+    <span class="socials">
+      <a href="https://x.com/PixelMisfitss" target="_blank" rel="noopener" aria-label="Pixel Misfits on X"><img src="images/logo-x.png" alt="X"></a>
+      <a href="https://opensea.io/collection/pixel-misfits" target="_blank" rel="noopener" aria-label="Pixel Misfits on OpenSea"><img src="images/logo-opensea.png" alt="OpenSea"></a>
+      <a href="https://robinhoodchain.blockscout.com/address/0x5ed0c4077a6a00c07d4e6bd0681deca59d0e68f7" target="_blank" rel="noopener" aria-label="Pixel Misfits contract on Blockscout"><img src="images/logo-explorer.png" alt="Explorer"></a>
+    </span>
   </div>
 </footer>
 
