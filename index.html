@@ -214,11 +214,15 @@
   var SUPPLY = 5555;
 
   // Gallery: first 12 minted Misfits.
+  // Website-only art swap: cards #8/#9 show new art (images/8-web.png,
+  // images/9-web.png). The NFT image files (images/8.png, images/9.png)
+  // and on-chain metadata are untouched.
+  var WEB_ART = { 8: "images/8-web.png", 9: "images/9-web.png" };
   var gallery = document.getElementById("gallery");
   var html = "";
   for (var i = 1; i <= 12; i++) {
     html += '<a class="card" href="https://opensea.io/assets/robinhood/' + CONTRACT + '/' + i + '" target="_blank" rel="noopener">'
-      + '<img src="images/' + i + '.png" alt="Pixel Misfit #' + i + '" loading="lazy">'
+      + '<img src="' + (WEB_ART[i] || "images/" + i + ".png") + '" alt="Pixel Misfit #' + i + '" loading="lazy">'
       + '<span class="cap"><span>Pixel Misfit</span><b>#' + i + '</b></span></a>';
   }
   gallery.innerHTML = html;
